@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/laptop2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.Navbar{ 
+    font-family: serif;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px 1px grey;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(235, 235, 235, 0.90), rgba(187, 186, 184, 0.90), rgba( 148,148,148,0.90));
+        h1{
+            font-weight: lighter;
+        }
+        .Menu{
+        list-style: none;
+        font-size: 20px;
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        margin: 0 45px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+    }
+}
+h2{
+    font-size: 40px;
+    font-family: serif;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgba(99, 99, 99, 0.90);
+    border-radius: 5px 5px ; 
+    color: white;
+    width: 500px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 425px;
+    position: absolute;
+    z-index: -1;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+.infos{
+    width: 300px;
+    height: auto;
+    background-color: rgba($color: white, $alpha: 0.80);
+    box-shadow: 5px 5px 5px rgb(197, 197, 197);
+    border-radius: 5px 5px;
+    font-family: serif;
+    font-size: 20px;
+    margin-top: 250px;
+    line-height: 30px;
+    text-align: center;
+    img{
+        width: 50px;
+        height: 50px;
+        transition: transform .1s;
+    }
+    img:hover{
+        -ms-transform: scale(1.2); 
+        -webkit-transform: scale(1.2); 
+        transform: scale(1.2);
+    }
+    a{
+        color: black;
+        text-decoration: none; 
+    a:hover{
+        text-decoration: none;
+        color: black;
+    }
+    }
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .reseaux{
+        width: 300px;
+        height: auto;
+        background-color: rgba($color: white, $alpha: 0.80);
+        box-shadow: 5px 5px 5px rgb(197, 197, 197);
+        border-radius: 5px 5px;
+        font-family: serif;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+.reseaux{
+    display: flex;
+    justify-content: center;
+    .Linkedin img{
+        width: 60px;
+        height: 70px;
+        padding-right: 50px;
+        padding-top: 10px;
+        transition: transform .1s;
+    }
+    .Github img{
+        padding-top: 15px;
+        width: 60px;
+        height: 60px;
+        transition: transform .1s;
+    }
+    img:hover{
+        -ms-transform: scale(1.2); 
+        -webkit-transform: scale(1.2); 
+        transform: scale(1.2);
+    }
+}
+ 
