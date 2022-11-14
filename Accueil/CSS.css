@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar {
+  font-family: serif;
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px 1px grey;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+}
+.Navbar .Accueil {
+  font-weight: lighter;
+}
+.Navbar .Menu {
+  list-style: none;
+  font-size: 20px;
+}
+.Navbar ul {
+  display: flex;
+}
+.Navbar li {
+  margin: 0 45px;
+}
+.Navbar a {
+  color: black;
+  text-decoration: none;
+}
+.Navbar a:hover {
+  color: white;
+}
+
+body {
+  background-color: rgb(87, 86, 86);
+}
+
+.box {
+  width: 100%;
+  display: flex;
+}
+
+.Name {
+  color: white;
+  width: 600px;
+  height: 300px;
+  margin-top: 150px;
+  margin-left: 50px;
+  box-shadow: 10px 10px 2px 1px #858585;
+  background-color: #c38d94;
+  font-family: serif;
+  font-size: 35px;
+  text-shadow: 7px -4px 3px rgba(0, 0, 0, 0.281);
+  z-index: 1;
+  position: absolute;
+}
+.Name .Firstname {
+  padding-top: 80px;
+  padding-left: 100px;
+}
+.Name .Lastname {
+  padding-left: 200px;
+}
+
+.presentation {
+  background-color: #a76571;
+  height: 500px;
+  width: 850px;
+  margin-top: 50px;
+  margin-right: 0px;
+  margin-left: 500px;
+}
+.presentation p {
+  color: white;
+  padding-left: 200px;
+  padding-right: 20px;
+  padding-top: 25%;
+  font-size: 20px;
+}/*# sourceMappingURL=CSS.css.map */
