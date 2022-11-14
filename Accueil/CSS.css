@@ -13,9 +13,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #FFFFEC, rgb(221, 189, 149), #DDBC95);
+  background: rgba(255, 255, 255, 0.5);
 }
-.Navbar h1 {
+.Navbar .Accueil {
   font-weight: lighter;
 }
 .Navbar .Menu {
@@ -36,18 +36,23 @@
   color: white;
 }
 
+body {
+  background-color: rgb(87, 86, 86);
+}
+
 .box {
   width: 100%;
   display: flex;
 }
 
 .Name {
+  color: white;
   width: 600px;
   height: 300px;
   margin-top: 150px;
   margin-left: 50px;
   box-shadow: 10px 10px 2px 1px #858585;
-  background-color: rgb(179, 136, 103);
+  background-color: #c38d94;
   font-family: serif;
   font-size: 35px;
   text-shadow: 7px -4px 3px rgba(0, 0, 0, 0.281);
@@ -63,7 +68,7 @@
 }
 
 .presentation {
-  background-color: #DDBC95;
+  background-color: #a76571;
   height: 500px;
   width: 850px;
   margin-top: 50px;
@@ -71,6 +76,7 @@
   margin-left: 500px;
 }
 .presentation p {
+  color: white;
   padding-left: 200px;
   padding-right: 20px;
   padding-top: 25%;
