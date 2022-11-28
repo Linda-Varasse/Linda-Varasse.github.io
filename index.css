@@ -202,4 +202,7 @@ footer .contact .mail img{
     .nom{
         top: 20%;
     }
+    .nom h1{
+        font-size: 4vw;
+    }
 }
