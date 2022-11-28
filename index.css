@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.Navbar img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    margin-left: 10px;
+}
+.Navbar{
+    z-index: 1;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 10px 10px 5px rgb(40, 40, 40);
+}
+.Navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.Navbar ul li{
+    margin-top: 25px;
+    margin-right: 75px;
+    list-style: none;
+    font-size: 20px;
+}
+.Navbar .Accueil a{
+    color: blueviolet;
+    pointer-events: none;
+    font-weight: bold;
+}
+.Navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.Navbar .Parcours a:hover{
+    color: rgb(123, 0, 238);
+    font-weight: bold;
+}
+.Navbar .Portfolio a:hover{
+    color: rgb(40, 26, 196);
+    font-weight: bold;
+}
+.Navbar  a:hover{
+    color: rgb(0, 106, 255);
+    font-weight: bold;
+}
+.Navbar .menu_hamburger{
+    width: 35px;
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+.box img{
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+.nom{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(41, 40, 40, 0.782);
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nom h1{
+    text-align: center;
+    font-size: 7vw;
+    font-family: 'Jacques Francois', serif;
+    font-weight: 100;
+    color: white;
+    text-shadow: 3px 3px 10px white;
+}
+
+
+@media screen and (max-width: 800px){
+    .Navbar .Accueil a{
+        color: blueviolet;
+        pointer-events: none;
+        font-weight: bold;
+    }
+    .Navbar .menu{
+         z-index: 1;
+        position: absolute;
+        background-color: rgba(58, 56, 56, 0.597);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 1s ease;
+    }
+    .Navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .Navbar .menu_hamburger{
+        display: block;
+        z-index: inherit;
+    }
+    .Navbar ul li{
+        margin: 30px 0px;
+    }
+    .Navbar ul li a{
+        font-size: 25px;
+    }
+    .menu.mobile-menu{
+        margin-left: 0px;
+    }
+    .nom{
+        top: 30%;
+        left: 50%;
+    }
+}
+
+.box2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.box2 p{
+    color: white;
+    font-size: 20px;
+    padding-top: 100px;
+    width: 70%;
+    text-align: justify;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(132, 132, 132, 0.862);
+    margin-top: 200px;
+}
+footer .contact{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+footer .contact .github img{
+    width: 50px;
+    height: auto;
+    margin-right: 50px;
+}
+footer .contact .linkedin img{
+    width: 48px;
+    height: auto;
+
+}
+footer .contact .mail img{
+    width: 50px;
+    height: auto;
+    margin-left: 50px;
+}
