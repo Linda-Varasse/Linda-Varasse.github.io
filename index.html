@@ -26,6 +26,9 @@
     <section>
         <div class="box">
             <img src="image/Accueil1.jpg" alt="image d'acceuil">
+            <div class="arrow">
+                <img src="image/arrow.png" alt="flèche pour descendre">
+            </div>
             <div class="nom">
                 <h1>Linda Varasse</h1>
             </div>
@@ -46,7 +49,10 @@
                     <a href="https://www.linkedin.com/in/linda-varasse-054348182/"> <img src="image/linkedin.png" alt="logo linkedin"></a>
                 </div>
                 <div class="mail">
-                    <a href="mailto:Linda.varasse@outlook.fr"><img src="image/logo_mail.png" alt="log mail"></a>
+                    <a href="mailto:Linda.varasse@outlook.fr"><img src="image/logo_mail.png" alt="logo mail"></a>
+                </div>
+                <div class="formation">
+                    <a href="image/Linda Varasse - CV .pdf" target="_blank"><img src="image/formation.png" alt="logo formation"></a>
                 </div>
             </div>
     </footer>
@@ -58,5 +64,18 @@
     menuHamburger.addEventListener('click',()=>{
     navLinks.classList.toggle('mobile-menu')
     })
+ </script>
+ <script>
+    const btn = document.querySelector('.arrow');
+
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 1000,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
  </script>
 </html>

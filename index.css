@@ -47,10 +47,11 @@ body{
     color: rgb(40, 26, 196);
     font-weight: bold;
 }
-.Navbar  a:hover{
+.Navbar .Contact a:hover{
     color: rgb(0, 106, 255);
     font-weight: bold;
 }
+
 .Navbar .menu_hamburger{
     width: 35px;
     position: absolute;
@@ -60,13 +61,14 @@ body{
 .box img{
     max-width: 100%;
     height: auto;
+    position: relative;
     opacity: 0.8;
 }
 .nom{
+    position: absolute;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: rgba(41, 40, 40, 0.782);
-    position: absolute;
     padding: 30px;
     display: flex;
     top: 45%;
@@ -81,9 +83,31 @@ body{
     color: white;
     text-shadow: 3px 3px 10px white;
 }
+.arrow{
+    position: absolute;
+    margin: 20px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+}
+.arrow img{
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.arrow img:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+}
+@media screen and (max-width: 1200px){
+   .arrow{
+    display: none;
+   }
+}
 
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 950px){
     .Navbar .Accueil a{
         color: blueviolet;
         pointer-events: none;
@@ -123,6 +147,9 @@ body{
         top: 30%;
         left: 50%;
     }
+    .arrow{
+        display: none;
+       }
 }
 
 .box2{
@@ -152,16 +179,30 @@ footer .contact .github img{
     width: 50px;
     height: auto;
     margin-right: 50px;
+    transition: transform .5s;
 }
 footer .contact .linkedin img{
     width: 48px;
     height: auto;
-
+    transition: transform .5s;
 }
 footer .contact .mail img{
     width: 50px;
     height: auto;
     margin-left: 50px;
+    transition: transform .5s;
+}
+footer .contact .formation img{
+    width: 45px;
+    height: auto;
+    padding-top: 4px;
+    margin-left: 50px;
+    transition: transform .5s;
+}
+footer img:hover{
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2);
 }
 @media screen and (max-width: 600px){
     .Navbar .Accueil a{
@@ -204,5 +245,8 @@ footer .contact .mail img{
     }
     .nom h1{
         font-size: 4vw;
+    }
+    .arrow{
+        display: none;
     }
 }
