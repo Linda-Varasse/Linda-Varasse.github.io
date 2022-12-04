@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.Navbar img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    margin-left: 10px;
+}
+.Navbar{
+    z-index: 1;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 10px 10px 5px rgb(40, 40, 40);
+}
+.Navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.Navbar ul li{
+    margin-top: 25px;
+    margin-right: 75px;
+    list-style: none;
+    font-size: 20px;
+}
+.Navbar .Parcours a{
+    color:  rgb(123, 0, 238);
+    font-weight: bold;
+    pointer-events: none;
+}
+.Navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.Navbar .Contact a:hover{
+    color: rgb(0, 106, 255);
+    font-weight: bold;
+}
+.Navbar .Portfolio a:hover{
+    color: rgb(40, 26, 196);
+    font-weight: bold;
+}
+.Navbar .Accueil a:hover{
+    color: blueviolet;
+    font-weight: bold;
+}
+.Navbar .menu_hamburger{
+    width: 35px;
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+@media screen and (max-width: 800px){
+    .Navbar .menu{
+         z-index: 1;
+        position: absolute;
+        background-color: rgba(58, 56, 56, 0.597);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 1s ease;
+    }
+    .Navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .Navbar .menu_hamburger{
+        display: block;
+        z-index: inherit;
+    }
+    .Navbar ul li{
+        margin: 30px 0px;
+    }
+    .Navbar ul li a{
+        font-size: 25px;
+    }
+    .menu.mobile-menu{
+        margin-left: 0px;
+    }
+
+}
+.box {
+    height: 200px;
+    width: 100%;
+    background-image: url("../image/Formation3.png");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.box h2{
+    color: white;
+    font-size: 5em;
+    font-family: 'Jacques Francois', serif;
+    text-shadow: 4px 4px 3px grey;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(132, 132, 132, 0.862);
+    margin-top: 200px;
+    position: absolute;
+    bottom: 0;
+}
+footer .contact{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+footer .contact .github img{
+    width: 50px;
+    height: auto;
+    margin-right: 50px;
+    transition: transform .5s;
+}
+footer .contact .linkedin img{
+    width: 48px;
+    height: auto;
+    transition: transform .5s;
+}
+footer .contact .mail img{
+    width: 50px;
+    height: auto;
+    margin-left: 50px;
+    transition: transform .5s;
+}
+footer .contact .formation img{
+    width: 45px;
+    height: auto;
+    padding-top: 4px;
+    margin-left: 50px;
+    transition: transform .5s;
+}
+footer img:hover{
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2);
+}

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Parcours/Parcours.css">
     <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
-    <title>Accueil</title>
+    <title>Parcours</title>
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
             <img src="image/logo.png" alt="logo">
             <div class="menu">
                 <ul>
-                    <li class="Accueil"> <a href="#">Accueil</a></li>
+                    <li class="Accueil"> <a href="index.html">Accueil</a></li>
                     <li class="Parcours"><a href="Parcours.html">Parcours</a></li>
                     <li class="Portfolio"><a href="">Portfolio</a></li>
                     <li class="Contact"><a href="Contact.html">Contact</a></li>
@@ -24,26 +24,14 @@
         </nav>
     </header>
     <section>
-        <div class="box">
-            <img src="image/Accueil1.jpg" alt="image d'acceuil">
-            <div class="arrow">
-                <img src="image/arrow.png" alt="flèche pour descendre">
-            </div>
-            <div class="nom">
-                <h1>Linda Varasse</h1>
-            </div>
-        </div> 
+       <div class="box">
+            <h2>Formations</h2>
+       </div>
     </section>
-    <section>
-        <div class="box2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam optio neque harum quam omnis unde, aliquam voluptatum corrupti totam officia necessitatibus iusto ad! Consectetur maxime nulla eos, quia doloribus deleniti. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat fuga ab corporis neque quod ipsum nulla incidunt similique, commodi officiis ipsa autem esse numquam itaque architecto exercitationem dolores praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi repellendus doloribus amet, inventore voluptatum est ex laudantium harum perferendis, non iste consectetur aspernatur odio id cupiditate aperiam vel? Blanditiis.
-            </p>
-        </div>
-    </section>
-    <footer>
+      <footer>
             <div class="contact">
                 <div class="github">
-                    <a href="https://github.com/Linda-Varasse" ><img src="image/logo_github.png" alt="logo github"></a>
+                    <a href="https://github.com/Linda-Varasse"><img src="image/logo_github.png" alt="logo github"></a>
                 </div>
                 <div class="linkedin">
                     <a href="https://www.linkedin.com/in/linda-varasse-054348182/"> <img src="image/linkedin.png" alt="logo linkedin"></a>
@@ -64,18 +52,5 @@
     menuHamburger.addEventListener('click',()=>{
     navLinks.classList.toggle('mobile-menu')
     })
- </script>
- <script>
-    const btn = document.querySelector('.arrow');
-
-btn.addEventListener('click', () => {
-
-    window.scrollTo({
-        top: 1000,
-        left: 0,
-        behavior: "smooth"
-    })
-
-})
  </script>
 </html>
