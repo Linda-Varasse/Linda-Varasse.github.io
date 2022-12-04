@@ -250,3 +250,30 @@ footer img:hover{
         display: none;
     }
 }
+@media screen and (min-height:950px) {
+    .box img{
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        opacity: 0.8;
+    }
+    .nom{
+        position: absolute;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: rgba(41, 40, 40, 0.782);
+        padding: 30px;
+        display: flex;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .nom h1{
+        text-align: center;
+        font-size: 7vw;
+        font-family: 'Jacques Francois', serif;
+        font-weight: 100;
+        color: white;
+        text-shadow: 3px 3px 10px white;
+    }
+}
