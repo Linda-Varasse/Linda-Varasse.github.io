@@ -186,6 +186,10 @@ body{
     top: 20%;
     left: 20%;
     }
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 }
 @media  screen and (max-width:900px) {
     .box{
@@ -214,6 +218,10 @@ body{
             padding-left: 60px;
             padding-right: 40px;
         }
+    body{
+            overflow-x: hidden;
+            overflow-y: hidden;
+    }
 }
 @media screen and (max-width:650px) {
     .box{
@@ -241,6 +249,10 @@ body{
             justify-content: space-between;
             padding-left: 60px;
             padding-right: 40px;
+        }
+        body{
+            overflow-x: hidden;
+            overflow-y: hidden;
         }
     
 }
@@ -276,5 +288,9 @@ body{
         }
         .box p{
             display: none;
+        }
+        body{
+            overflow-x: hidden;
+            overflow-y: hidden;
         }
 }
