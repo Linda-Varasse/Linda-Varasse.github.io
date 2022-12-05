@@ -93,10 +93,10 @@ body{
 .box {
     height: 200px;
     width: 100%;
-    background-image: url("../image/Formation3.png");
     background-repeat: no-repeat;
+    background-image: url("../image/Formation3.png");
     opacity: 0.7;
-}
+}   
 .box h2{
     color: white;
     font-size: 5em;
@@ -105,6 +105,7 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 5%;
+    font-weight: 200;
 }
 
 
