@@ -101,6 +101,19 @@ body{
     -webkit-transform: scale(1.5); 
     transform: scale(1.5);
 }
+@media screen and (min-width:1550px) {
+    .nom{
+        position: absolute;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: rgba(41, 40, 40, 0.782);
+        padding: 30px;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 @media screen and (max-width: 1200px){
    .arrow{
     display: none;

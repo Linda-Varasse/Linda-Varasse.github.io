@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    overflow: hidden;
 }
 .background{
     width: 100%;
@@ -7,10 +8,9 @@
     opacity: 0.7;
 }
 body{
-    height: auto;
+    height: 100%;
     background-color: black;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .Navbar img{
     position: absolute;
@@ -291,6 +291,7 @@ body{
             display: none;
         }
         body{
+            height: auto;
             overflow-x: hidden;
             overflow-y: hidden;
         }
