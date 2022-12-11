@@ -7,7 +7,7 @@
     opacity: 0.7;
 }
 body{
-    height: 100vh;
+    height: auto;
     background-color: black;
     overflow-x: hidden;
     overflow-y: hidden;
