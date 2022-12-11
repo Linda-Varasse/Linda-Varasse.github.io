@@ -5,6 +5,7 @@ body{
     background-color: black;
     height: 100%;
 }
+/**Navbar**/
 .Navbar img{
     position: absolute;
     height: 50px;
@@ -58,6 +59,7 @@ body{
     right: 20px;
     display: none;
 }
+/**responsive**/
 @media screen and (max-width: 800px){
     .Navbar .menu{
          z-index: 1;
@@ -91,6 +93,7 @@ body{
     }
 
 }
+/**Expériences et formations**/
 .box {
     height: 250px;
     width: 100%;
@@ -107,6 +110,7 @@ body{
     padding-top: 5%;
     font-weight: 200;
 }
+/** Responsive**/
 @media screen and (max-width:950px) {
     .box h2{
         font-size: 50px;
@@ -120,6 +124,7 @@ body{
         padding-top: 10%;
     }
 }
+/** Timeline**/
 .timeline-section{
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
@@ -198,6 +203,7 @@ body{
     font-size: 16px;
     line-height: 22px;
 }
+/** Reponsive**/
 @media screen and (max-width: 800px) {
     .timeline-items::before{
         left: 14px;
@@ -217,6 +223,7 @@ body{
         left: 5px;
     }
 }
+/** bouton**/
 .button{
     display: flex;
     justify-content: center;
@@ -261,7 +268,7 @@ body{
     box-shadow: 10px -10px 25px 0 rgba(143, 64,248,0.25), -10px 10px 25px 0px rgba(39,200,255,0.25);
 }
 
-
+/** Compétences**/
 
 .competences{
     margin-top: 200px;
@@ -281,6 +288,7 @@ body{
     padding-top: 5%;
 }
 
+/** Responsive**/
 @media screen and (max-width:950px) {
     .competences{
         display: flex;
@@ -291,16 +299,17 @@ body{
         font-size: 50px;
     }
 }
-
+/** cercle**/
 .cercle-competence{
     width: 100%;
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .cercle-html{
-    margin-left: 20px;
+    position: relative;
+    margin-left: 5px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -311,12 +320,19 @@ body{
 }
 .cercle-html img{
     padding-top: 10px;
-    width: 70px;
+    width: 80px;
     height: auto;
 }
-
+.cercle-html h4{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .cercle-css{
-    padding-top: 10px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -324,14 +340,25 @@ body{
     width: 300px;
     min-width: 250px;
     height: 400px;
+    position: relative;
 }
 
 .cercle-css img{
+    padding-top: 5px;
     width: 60px;
     height: auto;
 }
+.cercle-css h4{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .cercle-github{
-    margin-right: 20px;
+    margin-right: 5px;
     padding-top: 10px;
     height: 400px;
     margin-top: 100px;
@@ -340,11 +367,22 @@ body{
     align-items: center;
     width: 300px;
     min-width: 250px;
+    position: relative;
 }
 .cercle-github img{
     width: 150px;
     height: auto;
 }
+.cercle-github h4{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 svg{
     height: 200px;
@@ -362,15 +400,6 @@ svg circle{
 }
 
 
-.cercle-html h4{
-    position: absolute;
-    font-size: 2em;
-    color: #ffffff;
-    font-weight: 700;
-    top: 50%;
-    left: 15%;
-    transform: translate(-15%,-50%);
-}
 .cercle-html svg circle:nth-child(1){
     stroke: rgb(255, 255, 255);
     stroke-dashoffset: 0;
@@ -382,15 +411,7 @@ svg circle{
     to{stroke-dashoffset:112;
     }
 }
-.cercle-css h4{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 2em;
-    color: #ffffff;
-    font-weight: 700;
-}
+
 .cercle-css svg circle:nth-child(1){
     stroke: rgb(255, 255, 255);
     stroke-dashoffset: 0;
@@ -403,15 +424,6 @@ svg circle{
     }
 }
  
-.cercle-github h4{
-    position: absolute;
-    top: 50%;
-    left: 85%;
-    transform: translate(-85%,-50%);
-    font-size: 2em;
-    color: #ffffff;
-    font-weight: 700;
-}
 .cercle-github svg circle:nth-child(1){
     stroke: rgb(255, 255, 255);
     stroke-dashoffset: 0;
@@ -423,44 +435,59 @@ svg circle{
     to{stroke-dashoffset:308;
     }
 }
- 
+ /** Responsive**/
 @media screen and (max-width: 915px) {
     .cercle-github{
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 50px;
-        margin-right: 0;
     }
-    .cercle-competence{
-        height: auto;
+    .cercle-github h4{
+        position: absolute;
+        color: #ffffff;
+        font-size: 2em;
+        font-weight: bold;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
     }
 }
 @media screen and (max-width: 615px) {
     .cercle-github{
-        margin-right: 0;
-        margin-top: 50px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
     .cercle-css{
-        margin-top: 50px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
     .cercle-html{
-        margin-left: 0;
-        margin-top: 50px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
+    .cercle-css h4{
+        position: absolute;
+        color: #ffffff;
+        font-size: 2em;
+        font-weight: bold;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+    .cercle-html h4{
+        position: absolute;
+        color: #ffffff;
+        font-size: 2em;
+        font-weight: bold;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
 }
-
-
-
+/** Pieds de page**/
 footer{
     width: 100%;
     height: 60px;
