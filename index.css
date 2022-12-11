@@ -113,6 +113,13 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .arrow{
+        position: absolute;
+        margin: 20px;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-70%);
+    }
 }
 @media screen and (max-width: 1200px){
    .arrow{
